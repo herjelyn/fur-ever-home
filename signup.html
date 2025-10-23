@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - FurEver Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <img src="images/pawlogo.png" class="logo" alt="logo">
+    <h2>Create Your Account</h2>
+
+    <input type="text" id="username" placeholder="Enter your username">
+    <input type="email" id="email" placeholder="Enter your email">
+
+    <div class="password-container">
+      <input type="password" id="password" placeholder="Enter your password">
+      <span class="toggle" onclick="togglePassword('password')">👁</span>
+    </div>
+
+    <div class="password-container">
+      <input type="password" id="confirmPassword" placeholder="Confirm password">
+      <span class="toggle" onclick="togglePassword('confirmPassword')">👁</span>
+    </div>
+
+    <label><input type="checkbox" id="terms"> I accept Privacy Policy & Terms of Use</label>
+
+    <button onclick="signUp()">Sign Up</button>
+    <p>Already have an account? <a href="login.html">Log In</a></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

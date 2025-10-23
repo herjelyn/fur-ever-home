@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FurEver Home - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo-title">
+      <img src="images/pawlogo.png" alt="Logo">
+      <h1>FurEver Home</h1>
+    </div>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="#">Adopt</a>
+      <a href="#">Profile</a>
+      <a href="index.html" onclick="logout()">Logout</a>
+    </nav>
+  </header>
+
+  <section class="pets-section">
+    <h2>Find Your Forever Friend</h2>
+    <p>Browse adorable pets ready to be adopted today!</p>
+    <input type="text" id="search" placeholder="Search by name or breed..." onkeyup="searchPets()">
+
+    <div class="pets-container" id="petsContainer"></div>
+  </section>
+
+  <footer>
+    <p>© 2025 FurEver Home | "Adopt love, not just a pet."</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
